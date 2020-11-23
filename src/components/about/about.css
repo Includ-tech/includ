@@ -1,0 +1,25 @@
+.technology-icon {
+  font-size: 5rem;
+  padding: 20px;
+  color: darkgray;
+}
+.technology-icon p {
+  font-size: 1rem;
+  color: #212529;
+}
+.icon {
+  display: block;
+  height: 100px;
+  width: 100px;
+  background-size: 53%;
+  margin: 0 auto 1.3rem;
+}
+.icon-firebase {
+  background: url(/icon-firebase.svg) center center/55% no-repeat;
+}
+.icon-mongo {
+  background: url(/icon-mongodb.svg) center center/40% no-repeat;
+}
+.icon-typescript {
+  background: url(/icon-typescript.svg) center center/60% no-repeat;
+}

@@ -1,0 +1,28 @@
+.footer-links {
+  color: rgb(33 37 41 / 0.5);
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+.footer-links:hover {
+  color: rgb(33 37 41 / 1);
+  text-decoration: none;
+}
+.footer-links:after {
+  content: "|";
+  position: absolute;
+  right: 0;
+}
+.footer-links:last-of-type:after {
+  content: "";
+}
+.copyright {
+  color: #aba6a6;
+  border-top: 1px solid #aba6a6;
+}
+.logo-footer {
+  height: 80px;
+}
+address {
+  color: rgb(33 37 41 / 0.5);
+  font-weight: bold;
+}
