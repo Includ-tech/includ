@@ -22,7 +22,7 @@ export class Header extends Component {
               <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
             <Nav className="ml-auto social-media">
-              <Nav.Link href="./services">
+              <Nav.Link href="https://www.linkedin.com/company/includ">
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </Nav.Link>
               {/* <Nav.Link href="./contact">
@@ -31,7 +31,7 @@ export class Header extends Component {
               <Nav.Link href="./contact">
                 <FontAwesomeIcon icon={faTwitter} />
               </Nav.Link> */}
-              <Nav.Link href="./contact">
+              <Nav.Link href="https://www.instagram.com/includ.in/?hl=en">
                 <FontAwesomeIcon icon={faInstagram} />
               </Nav.Link>
             </Nav>

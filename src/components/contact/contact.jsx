@@ -13,7 +13,7 @@ export class Contact extends Component {
         <Container fluid className="pt-5 pb-5">
           <Row>
             <Col sm="12" className="pt-5 pb-5">
-              <h1>Contact Us</h1>
+              <h2 className="mb-3">CONTACT US</h2>
             </Col>
           </Row>
           <Row className="d-flex h-100">

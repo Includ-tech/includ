@@ -12,3 +12,9 @@
   outline: none;
   font-weight: 600;
 }
+
+@media only screen and (max-width: 600px){
+  .main-heading{
+    font-size: 30px;
+  }
+}

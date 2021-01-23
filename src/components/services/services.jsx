@@ -16,10 +16,10 @@ export class Services extends Component {
   render() {
     return (
       <section id="services" className="pt-5 pb-5">
-        <Container fluid className="pb-5">
+        <Container className="pb-5">
           <Row className="justify-content-center">
-            <Col sm="10" className="pt-5 pb-5">
-              <h1>Services</h1>
+            <Col sm="8" className="pt-5 pb-5">
+              <h2 className="mb-3">SERVICES</h2>
               <p>
                 Includ primarily provides Website designing and development
                 services that deliver robust, scalable, and cost-effective
@@ -33,17 +33,17 @@ export class Services extends Component {
             </Col>
           </Row>
           <Row>
-            <Col sm="4">
+            <Col sm="4" className="mt-5">
               <img src="/responsive.svg" alt="" className="icon-service" />
-              <h6>Website Development</h6>
+              <h6 className="mt-2">Website Development</h6>
             </Col>
-            <Col sm="4">
+            <Col sm="4" className="mt-5">
               <img src="/settings.svg" alt="" className="icon-service" />
-              <h6>Web App Development</h6>
+              <h6 className="mt-2">Web App Development</h6>
             </Col>
-            <Col sm="4">
+            <Col sm="4" className="mt-5">
               <img src="/mobile-app.svg" alt="" className="icon-service" />
-              <h6>Hybrid App Development</h6>
+              <h6 className="mt-2">Hybrid App Development</h6>
             </Col>
           </Row>
         </Container>

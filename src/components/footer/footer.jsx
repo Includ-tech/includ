@@ -53,25 +53,27 @@ export class Footer extends Component {
                   Ghatkopar(E), Mumbai-86
                 </address>
               </div>
-              <div className="mb-5">
+
+              <p className="mb-0 copyright pt-2">©2021 by Includ.</p>
+            </Col>
+            <Col sm="2" className="d-flex flex-column">
                 <a
-                  className="position-relative footer-links p-2 pl-5 pr-5"
-                  href="http://"
+                  className="position-relative footer-links p-2 pl-5 pr-5 d-flex align-items-center"
+                  href="https://www.linkedin.com/company/includ"
+                  target="_blank"
                 >
                   <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
                   LinkedIn
                 </a>
                 <a
-                  className="position-relative footer-links p-2 pl-5 pr-5"
+                  className="position-relative footer-links p-2 pl-5 pr-5 d-flex align-items-center"
                   href="https://www.instagram.com/includ.in/?hl=en"
+                  target="_blank"
                 >
                   <FontAwesomeIcon icon={faInstagram} className="mr-2" />
                   Instagram
                 </a>
-              </div>
-              <p className="mb-0 copyright pt-2">©2020 by Includ.</p>
             </Col>
-            <Col sm="2"></Col>
           </Row>
         </Container>
       </footer>

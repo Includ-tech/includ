@@ -12,6 +12,9 @@ body {
 img {
   max-width: 100%;
 }
+p{
+  color: #6a7076;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

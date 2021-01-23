@@ -88,8 +88,8 @@ export class Portfolio extends Component {
     };
     return (
       <section id="portfolio" className="pt-5 pb-5">
-        <Container fluid className="pt-5">
-          <h2>Portfolio</h2>
+        <Container className="pt-5">
+          <h2 className="mb-3">PORTFOLIO</h2>
           {/* <Row>
             <div id="myBtnContainer">
               <button className="btn active" onClick="filterSelection('all')">
@@ -116,7 +116,7 @@ export class Portfolio extends Component {
               </Slider> */}
             {this.state.portfolio.map((item, index) => {
               return (
-                <Col sm="3" key={item.name} className="content">
+                <Col sm="3" key={item.name} className="pt-3 pt-sm-5 content">
                   <a href={item.link}>
                     <img
                       className="client-logo"
