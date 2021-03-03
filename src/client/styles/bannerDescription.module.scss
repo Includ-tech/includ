@@ -1,0 +1,17 @@
+.subBanner {
+  background: url(/assets/images/services-leading-bg.svg) no-repeat center right -8%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  color: white;
+  /* display: flex;
+    justify-content: center; */
+}
+.subBanner h {
+  text-align: center;
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 760px) {
+    .subBanner h {
+      max-width: 65%;
+    }
+}

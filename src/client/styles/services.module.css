@@ -1,0 +1,27 @@
+.services {
+  text-align: center;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.serviceImg{
+  width: 50%;
+  height: 200px;
+}
+
+.waysToWork {
+  background-color: #37b18e;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  color: white;
+  text-align: center;
+}
+@media screen and (min-width: 760px) {
+  .subBanner h {
+    max-width: 60%;
+  }
+
+  .waysToWork {
+    text-align: left;
+  }
+}

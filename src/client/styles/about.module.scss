@@ -1,0 +1,46 @@
+@import './variables.scss' ;
+@import './media.scss' ;
+
+
+.banner{
+    // background:url('/assets/images/about.svg') no-repeat ;
+    // background-position: bottom;
+    // background-size:contain;
+    // width:'100%';
+    // padding-bottom: 40%;
+}
+
+.para{
+    width:'100%';
+    padding:8rem 1rem;
+    opacity: 0.85;
+    @include desktop{
+        padding:8rem 5rem
+    }
+}
+
+.technology{
+    // margin-top: 85rem;
+    background-color: $link-color;
+    color:white;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    @include notMobile{
+        // margin-top: 60rem;
+    }
+
+    & h3{
+        font-weight: 300;
+    }
+    
+    & >div{
+        padding:0;
+        @include notMobile {
+            padding:0 3.5rem;
+        }
+        & p{
+            padding-top: 1rem;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+
+@import './variables.scss';
+
+@mixin notMobile {
+    @media (min-width: #{$sm-width}) {
+        @content;
+      }
+  }
+
+  @mixin tablet {
+    @media (min-width: #{$sm-width}) and (max-width: #{$md-width - 1px}) {
+      @content;
+    }
+  }
+
+
+
+  @mixin desktop {
+    @media (min-width: #{$md-width}) {
+      @content;
+    }
+  }
+
+  @mixin desktopPlus {
+    @media (min-width: #{$lg-width}) {
+      @content;
+    }
+  }
