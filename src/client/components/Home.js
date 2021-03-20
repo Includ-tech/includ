@@ -47,10 +47,10 @@ const Home = React.memo(() => {
         <Row className="pb-5 align-items-center">
           <Col xs="12" className="pb-sm-5">
             <h1 className=" dark-black">
-              We build great websites &amp; web apps with
+              We build great websites &amp; web apps 
             </h1>
             <h1 className="dark-black">
-              <span>
+              <span>with&nbsp;
                 <TypingAnimation />
               </span>
             </h1>
@@ -188,7 +188,7 @@ const Home = React.memo(() => {
             <div className={styles.container}>
               <img
                 className={`${styles.image}`}
-                src="/assets/images/home-banner2.png"
+                src="/assets/images/screen-wrkspot.png"
                 alt="Avatar"
                 width="100%"
               />
@@ -202,7 +202,7 @@ const Home = React.memo(() => {
               </div>
               <div className={styles.viewProject}>
                 <Link href={"/portfolio/wrkspot"}>
-                  <h style={{ display: "inline" }}>
+                  <h style={{ display: "inline", cursor: "pointer" }}>
                     View Project{" "}
                     <svg
                       width="24"
@@ -223,7 +223,7 @@ const Home = React.memo(() => {
             <div className={styles.container}>
               <img
                 className={`${styles.image}`}
-                src="/assets/images/home-banner2.png"
+                src="/assets/images/screen-igrenenergi.png"
                 alt="Avatar"
                 width="100%"
               />
@@ -237,7 +237,7 @@ const Home = React.memo(() => {
               </div>
               <div className={styles.viewProject}>
                 <Link href={"/portfolio/igrenenergi"}>
-                  <h style={{ display: "inline" }}>
+                  <h style={{ display: "inline", cursor: "pointer" }}>
                     View Project{" "}
                     <svg
                       width="24"
