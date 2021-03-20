@@ -55,8 +55,8 @@ const Home = React.memo(() => {
               </span>
             </h1>
             <h4 className={`hero-sub-heading ${styles.subHeading}`}>
-              Top-notch digital solutions from a web development company with a
-              focus on your online business profitability.
+              Providing top-notch digital solutions with a focus on your online
+              business profitability.
             </h4>
           </Col>
           <Col xs="12" className="pb-5 d-sm-none">
@@ -84,12 +84,14 @@ const Home = React.memo(() => {
                 Includ is a team of passionate people highly motivated to
                 provide expert level Web app solutions to businesses. We are
                 focused on building high quality websites, fully responsive web
-                interfaces, hybrid mobile applications and website designing
-                services. We use the latest technologies to deliver an optimised
-                product with high performance. Our team has been working for
-                clients in different sectors over the years. We also provide
-                website maintenance and support services thereby maintaining a
-                long lasting relationship with the client.
+                interfaces, hybrid mobile applications and providing website
+                design services. We use latest technologies to deliver an
+                optimised product with high performance.{" "}
+              </h>
+              <h className="large-sub-heading" style={{ marginTop: "10px" }}>
+                We have worked with various clients in different sectors. We
+                also provide website maintenance and support services thereby
+                maintaining a long lasting relationship with the client.
               </h>
             </Col>
           </Row>
@@ -194,8 +196,7 @@ const Home = React.memo(() => {
                 <div className={styles.text}>
                   <h2>WrkSpot</h2>
                   <h4 style={{ paddingBottom: "2rem", paddingTop: "1rem" }}>
-                    Hotel Management Software | Hotel Employee
-                    Management
+                    Hotel Management Software | Hotel Employee Management
                   </h4>
                 </div>
               </div>
@@ -260,9 +261,10 @@ const Home = React.memo(() => {
         <Row style={{ paddingTop: "60px", paddingBottom: "40px" }}>
           <Col className="text-center">
             <h3>Ready to Catch up on Your Application Development?</h3>
-            <Link href={"/contact"} >
-              <span className="d-inline-block linkButton">Lets start a project together</span>
-              
+            <Link href={"/contact"}>
+              <span className="d-inline-block linkButton">
+                Lets start a project together
+              </span>
             </Link>
           </Col>
         </Row>

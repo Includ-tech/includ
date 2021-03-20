@@ -13,7 +13,7 @@ const Footer = () => {
                 <img
                   src={`/brand.png`}
                   className="App-logo"
-                  alt="Wrkspot logo"
+                  alt="Includ logo"
                   width="60"
                   height="60"
                 />
@@ -21,8 +21,7 @@ const Footer = () => {
               <Navbar.Text>
                 <h className="text-footer pr-sm-5">
                   {" "}
-                  Premier development hub for planning, building, support and
-                  enhancement of top-notch web applications.
+                  We provide web development, app development and design services to clients.  
                 </h>
               </Navbar.Text>
               {/* <Nav className="flex-row">

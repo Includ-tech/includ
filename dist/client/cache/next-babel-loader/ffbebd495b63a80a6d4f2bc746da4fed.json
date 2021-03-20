@@ -1,1 +1,0 @@
-{"ast":null,"code":"// Default export to prevent next.js errors\nexport var __N_SSP = true;\nexport default (function () {});","map":null,"metadata":{},"sourceType":"module"}

@@ -168,9 +168,7 @@ export default function Portfolio() {
       </Head>
       <Banner
         heading="PORTFOLIO"
-        subHeading="Our teams continually develop different
-          types of web applications and products. To
-          learn more, choose a story below."
+        subHeading="We have developed different types of web applications and products. To learn more, choose a story below."
       />
 
       <Container fluid style={{ paddingBottom: "3rem" }}>

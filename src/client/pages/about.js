@@ -101,18 +101,20 @@ export default function About() {
         <Row className="text-align-center justify-content-center">
           <div className={para}>
             <p>
-              Launched back in 2020, Includ is a world-class full-app-lifecycle
+              Launched in 2020, Includ is a world-class full-app-lifecycle
               software development company, focusing on building web apps,
               covering all the segments of a successful product launch and
               maintenance - ideation, prototyping and design, project
-              management, development, QA testing, and support. We work under
-              Agile principles and give each customer's product the same care
-              and love that we give to our own products.
+              management, development, QA testing, and support.
             </p>
             <p>
-              Today we offer application development services to companies that
-              need to scale up their development capabilities while keeping
-              quality, improving productivity, and optimizing costs.
+              We work under agile principles and give each customer's product
+              the same care and love that we give to our own products.
+            </p>
+            <p>
+              We offer application development services to companies that need
+              to scale up their development capabilities while focusing on high quality,
+              improving productivity, and optimizing costs.
             </p>
           </div>
         </Row>
@@ -152,10 +154,13 @@ export default function About() {
             <h5 className="mb-0" style={{ fontWeight: "300", lineHeight: "1" }}>
               Co-founder
             </h5>
-            <h5 style={{ fontWeight: "300", marginBottom: "0"  }}>
+            <h5 style={{ fontWeight: "300", marginBottom: "0" }}>
               <small>MBA - Marketing</small>
             </h5>
-            <a href="https://www.linkedin.com/in/thakkar-dipesh/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/thakkar-dipesh/"
+              target="_blank"
+            >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </Col>
