@@ -50,6 +50,7 @@ export default function Services() {
             <img
               src="/assets/images/hero-banner.svg"
               className={styles.serviceImg}
+              alt="Website Development"
             />
             <h4 className="pt-4">Website Development</h4>
             <p>
@@ -72,6 +73,7 @@ export default function Services() {
             <img
               src="/assets/images/web-app-development.svg"
               className={styles.serviceImg}
+              alt="Web app development"
             />
             <h4 className="pt-4">Web App Development</h4>
             <p>
@@ -86,6 +88,7 @@ export default function Services() {
             <img
               src="/assets/images/app-development.svg"
               className={styles.serviceImg}
+              alt="Hybrid app development"
             />
             <h4 className="pt-4">Hybrid App Development</h4>
             <p>
@@ -98,6 +101,7 @@ export default function Services() {
             <img
               src="/assets/images/web-design.svg"
               className={styles.serviceImg}
+              alt="Web Designing"
             />
             <h4 className="pt-4">Web Designing</h4>
             <p>

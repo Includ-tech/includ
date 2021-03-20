@@ -168,7 +168,7 @@ const projectDetail = (props) => {
                       overflow: "hidden",
                     }}
                   >
-                    <img src={`/assets/images/${snap}`} width="100%" />
+                    <img src={`/assets/images/${snap}`} width="100%" alt={project.title}/>
                   </div>
                 </Col>
               );

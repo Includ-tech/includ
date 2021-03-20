@@ -93,7 +93,7 @@ export default function About() {
         />
         <Row>
           <Col className="text-center">
-            <img src="assets/images/about-1.svg" />
+            <img src="assets/images/about-1.svg" alt="About Includ"/>
           </Col>
         </Row>
       </Container>
@@ -132,7 +132,7 @@ export default function About() {
             className="pt-5 d-flex flex-column justify-content-between"
             style={{ paddingBottom: "6rem" }}
           >
-            <img width="100%" src="/assets/images/hinal.png" />
+            <img width="100%" src="/assets/images/hinal.png" alt="Hinal"/>
             <h5 className="pt-4">Hinal Shah</h5>
             <h5 className="mb-0" style={{ fontWeight: "300", lineHeight: "1" }}>
               Founder
@@ -149,7 +149,7 @@ export default function About() {
             className="pt-5 d-flex flex-column justify-content-between"
             style={{ paddingBottom: "6rem" }}
           >
-            <img width="100%" src="/assets/images/dipesh.png" />
+            <img width="100%" src="/assets/images/dipesh.png" alt="Dipesh"/>
             <h5 className="pt-4">Dipesh Thakkar</h5>
             <h5 className="mb-0" style={{ fontWeight: "300", lineHeight: "1" }}>
               Co-founder
@@ -200,6 +200,7 @@ export default function About() {
                       className="pb-2"
                       src={"/assets/images/icons/" + item.iconUrl}
                       width="50%"
+                      alt={item.label}
                     />
                   </Col>
                 </Row>

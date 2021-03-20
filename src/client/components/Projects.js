@@ -16,6 +16,7 @@ export default function Projects({ item }) {
             src={`/assets/images/${item.screen}`}
             alt="Avatar"
             width="80%"
+            alt={item.title}
           />
         </div>
       </div>

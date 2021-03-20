@@ -61,7 +61,7 @@ const Home = React.memo(() => {
           </Col>
           <Col xs="12" className="pb-5 d-sm-none">
             <div className={styles.hero}>
-              <img src="/assets/images/hero-banner.svg" width="100%" />
+              <img src="/assets/images/hero-banner.svg" width="100%" alt="Includ Web Development"/>
             </div>
           </Col>
         </Row>
@@ -114,7 +114,7 @@ const Home = React.memo(() => {
             </a>
           </Col>
           <Col sm="6" className="pt-5 pb-sm-5">
-            <img src="/assets/images/website-development.svg" width="100%" />
+            <img src="/assets/images/website-development.svg" width="100%" alt="Web Development"/>
           </Col>
           <Col sm="6" className="pt-5 pb-5 d-sm-none">
             <h3>Web Development</h3>
@@ -129,7 +129,7 @@ const Home = React.memo(() => {
         </Row>
         <Row className="align-items-center">
           <Col sm="6" className="pt-5 pb-sm-5">
-            <img src="/assets/images/hybrid-app-development.svg" width="100%" />
+            <img src="/assets/images/hybrid-app-development.svg" width="100%" alt="Hybrid app development"/>
           </Col>
           <Col sm="5" className="pt-5 pb-5 text-sm-right">
             <h3>Hybrid App Development</h3>
@@ -151,7 +151,7 @@ const Home = React.memo(() => {
             </Link>
           </Col>
           <Col sm="6" className="pt-5 pb-sm-5">
-            <img src="/assets/images/website-designing.svg" width="100%" />
+            <img src="/assets/images/website-designing.svg" width="100%" alt="Web Designing"/>
           </Col>
           <Col sm="6" className="pt-5 pb-5 d-sm-none">
             <h3>Web Designing</h3>
@@ -191,6 +191,7 @@ const Home = React.memo(() => {
                 src="/assets/images/screen-wrkspot.png"
                 alt="Avatar"
                 width="100%"
+                alt="WrkSpot"
               />
               <div className={styles.middle}>
                 <div className={styles.text}>
@@ -226,6 +227,7 @@ const Home = React.memo(() => {
                 src="/assets/images/screen-igrenenergi.png"
                 alt="Avatar"
                 width="100%"
+                alt="igrenEnergi"
               />
               <div className={styles.middle}>
                 <div className={styles.text}>
