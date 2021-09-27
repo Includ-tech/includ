@@ -1,6 +1,7 @@
 import axios from "axios";
 import { Col, Row, Container } from "react-bootstrap";
 import Link from "next/link";
+import * as styles from "../../styles/blog.module.scss";
 
 const getBlogUrl = (title, guid) => {
   const id = guid.split("/").pop();
@@ -10,6 +11,8 @@ const getBlogUrl = (title, guid) => {
 };
 
 const Blogs = ({ response }) => {
+  const { heading, paragraph, pubDate, thumbnailImage, box } = styles;
+
   return (
     <div>
       {/* {response.stories.map((item) => {
@@ -36,23 +39,37 @@ const Blogs = ({ response }) => {
       })} */}
 
       <Container>
-        <Row className="d-flex justify-content-center">
+        <Row className="d-flex justify-content-center pb-5">
           {response.items.map((item) => {
+            const date = item.pubDate;
+            const publishdate = new Date(date).getDate();
+            const monthName = new Date(date).getMonth();
+            const pubYear = new Date(date).getFullYear();
+            var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            var pubMonth = monthNames[monthName];
+            const pubDates = pubMonth + ' ' + publishdate + ', ' + pubYear;
             return (
-              <Col sm={5} className="ml-2 mt-5">
+              <Col sm={5} className={`ml-4 mr-4 mt-5 ${thumbnailImage}`}>
+                 <div>
                 <Link href={`/blogs/${getBlogUrl(item.title, item.guid)}`}>
                   <a style={{ cursor: "pointer" }}>
-                    <div>
-                      <h4>{item.title}</h4>
-                      <p
+                      <img src={item.thumbnail}/>
+                      <div className={box}>
+                      <h4 className={heading}>{item.title}</h4>
+                      <div className={pubDate}>{pubDates}</div>
+                      <div className={paragraph}
                         dangerouslySetInnerHTML={{
                           __html: item.content.substring(0, 100),
+                          // __html: item.content=item.content.length>100 ?item.content.substring(0,105)+'....':item.content.substring(0,100),
+
                         }}
-                        style={{ fontSize: "0.8rem" }}
+                        // style={{ fontSize: "0.8rem" }}
                       />
+                      <span className="">Read more...</span>
                     </div>
                   </a>
                 </Link>
+               </div>
               </Col>
             );
           })}

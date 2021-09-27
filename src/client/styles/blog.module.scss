@@ -1,0 +1,28 @@
+.heading{
+    color: #212529;
+}
+.paragraph{
+    color: #212529;
+    h3,h4,p,li,blockquote{
+        color: #212529;
+        opacity: 0.8;
+        font-size: 1.1rem;
+    }
+}
+.thumbnailImage{
+    border: 1px solid rgb(214, 205, 205);
+    border-radius: 5px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.pubDate{
+    color: black;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+.box{
+    padding-right: 10px;
+    padding-left: 14px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
