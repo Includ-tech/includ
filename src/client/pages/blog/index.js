@@ -51,7 +51,7 @@ const Blogs = ({ response }) => {
             return (
               <Col sm={5} className={`ml-4 mr-4 mt-5 ${thumbnailImage}`}>
                  <div>
-                <Link href={`/blogs/${getBlogUrl(item.title, item.guid)}`}>
+                <Link href={`/blog/${getBlogUrl(item.title, item.guid)}`}>
                   <a style={{ cursor: "pointer" }}>
                       <img src={item.thumbnail}/>
                       <div className={box}>
