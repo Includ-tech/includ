@@ -1,10 +1,15 @@
-module.exports = {
-    distDir: "../../dist/client",
-    webpack: (config, { isServer }) => {
-        if (isServer) {
-          require('./generateSiteMap')
-        }
-    
-        return config
+
+module.exports ={
+  distDir: "../../dist/client",
+  images:{
+    domains:["http://localhost:3000"]
+  },
+  webpack:  (config, { isServer }) => {
+    console.log('isServer',isServer)
+      if (isServer) {
+      require('./generateSiteMap') 
       }
-};
+  
+      return config
+    }
+}
