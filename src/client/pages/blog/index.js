@@ -2,6 +2,7 @@ import axios from "axios";
 import { Col, Row, Container } from "react-bootstrap";
 import Link from "next/link";
 import * as styles from "../../styles/blog.module.scss";
+import Banner from "../../components/Banner";
 
 const getBlogUrl = (title, guid) => {
   const id = guid.split("/").pop();
@@ -11,7 +12,7 @@ const getBlogUrl = (title, guid) => {
 };
 
 const Blogs = ({ response }) => {
-  const { heading, paragraph, pubDate, thumbnailImage, box } = styles;
+  const { heading, paragraph, pubDate, thumbnailImage, box ,container,image,viewProject,middle} = styles;
 
   return (
     <div>
@@ -37,8 +38,12 @@ const Blogs = ({ response }) => {
           </div>
         );
       })} */}
-
-      <Container>
+ <Banner
+        heading="BLOG"
+        subHeading="We have developed different types of web applications and products. To learn more, choose a story below."
+      />
+      <Container fluid>
+     
         <Row className="d-flex justify-content-center pb-5">
           {response.items.map((item) => {
             const date = item.pubDate;
@@ -49,11 +54,29 @@ const Blogs = ({ response }) => {
             var pubMonth = monthNames[monthName];
             const pubDates = pubMonth + ' ' + publishdate + ', ' + pubYear;
             return (
-              <Col sm={5} className={`ml-4 mr-4 mt-5 ${thumbnailImage}`}>
-                 <div>
+              <Col sm={5} className={`ml-4 mr-4 mt-5 ${container}`}>
+                <div>
                 <Link href={`/blog/${getBlogUrl(item.title, item.guid)}`}>
-                  <a style={{ cursor: "pointer" }}>
-                      <img src={item.thumbnail}/>
+                 <div className={viewProject}>
+                <h style={{ display: "inline", cursor: "pointer" }}>
+                    View Blog{" "}
+                    <svg
+                      width="24"
+                      height="24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      fill="white"
+                    >
+                      <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                    </svg>
+                    </h>
+                    </div>
+                </Link>
+                <Link href={`/blog/${getBlogUrl(item.title, item.guid)}`}>
+
+                    <a style={{ cursor: "pointer" }}>
+                      <img src={item.thumbnail} className={image}/>
                       <div className={box}>
                       <h4 className={heading}>{item.title}</h4>
                       <div className={pubDate}>{pubDates}</div>
@@ -63,12 +86,11 @@ const Blogs = ({ response }) => {
                           // __html: item.content=item.content.length>100 ?item.content.substring(0,105)+'....':item.content.substring(0,100),
 
                         }}
-                        // style={{ fontSize: "0.8rem" }}
                       />
-                      <span className="">Read more...</span>
-                    </div>
+                      {/* <span className="">Read more...</span> */}
+                      </div>
                   </a>
-                </Link>
+                  </Link>
                </div>
               </Col>
             );
